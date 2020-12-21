@@ -1,5 +1,2 @@
-details:
-  token: 'Your Token'
-
-toggles:
-  join4join: false
+token: 'Your token'
+j4j: false
