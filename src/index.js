@@ -61,9 +61,9 @@ async function joinServer(code, token) {
         }
     ).catch(() => { });
 
-    if (request && request.status === 204) return console.log(`${chalk.green('Joined Server')} ${code} :. ${(new Date() - start)}ms`);
+    if (request && request.status === 204) return console.log(`${chalk.green('Joined Server')} ${code}`);
 
-    return console.log(`${Chalk.redBright("INVALID")} ${code} - Invalid Server Code : .${(new Date() - startTime)}ms`);
+    return console.log(`${Chalk.redBright("INVALID")} ${code} - Invalid Server Code`);
 }
 
 async function redeemNitro(code, channelId, startTime) {
